@@ -14,7 +14,34 @@
 		BF87F714246A11BA00D29757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF87F713246A11BA00D29757 /* Assets.xcassets */; };
 		BF87F717246A11BA00D29757 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF87F715246A11BA00D29757 /* LaunchScreen.storyboard */; };
 		BF87F71A246A11BA00D29757 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF87F719246A11BA00D29757 /* main.m */; };
+		BFA1C324246A2F28009A28C7 /* VietMapsGL.h in Headers */ = {isa = PBXBuildFile; fileRef = BFA1C322246A2F28009A28C7 /* VietMapsGL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA1C327246A2F28009A28C7 /* VietMapsGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA1C320246A2F28009A28C7 /* VietMapsGL.framework */; };
+		BFA1C328246A2F28009A28C7 /* VietMapsGL.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BFA1C320246A2F28009A28C7 /* VietMapsGL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BFA1C325246A2F28009A28C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF87F6FC246A11B800D29757 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFA1C31F246A2F28009A28C7;
+			remoteInfo = VietMapsGL;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BFA1C329246A2F28009A28C7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BFA1C328246A2F28009A28C7 /* VietMapsGL.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BF87F704246A11B800D29757 /* VietMapsGLCarthage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VietMapsGLCarthage.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,10 +56,21 @@
 		BF87F716246A11BA00D29757 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF87F718246A11BA00D29757 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF87F719246A11BA00D29757 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BFA1C320246A2F28009A28C7 /* VietMapsGL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VietMapsGL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFA1C322246A2F28009A28C7 /* VietMapsGL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VietMapsGL.h; sourceTree = "<group>"; };
+		BFA1C323246A2F28009A28C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BF87F701246A11B800D29757 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFA1C327246A2F28009A28C7 /* VietMapsGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFA1C31D246A2F28009A28C7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				BF87F706246A11B800D29757 /* VietMapsGLCarthage */,
+				BFA1C321246A2F28009A28C7 /* VietMapsGL */,
 				BF87F705246A11B800D29757 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				BF87F704246A11B800D29757 /* VietMapsGLCarthage.app */,
+				BFA1C320246A2F28009A28C7 /* VietMapsGL.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,7 +116,27 @@
 			path = VietMapsGLCarthage;
 			sourceTree = "<group>";
 		};
+		BFA1C321246A2F28009A28C7 /* VietMapsGL */ = {
+			isa = PBXGroup;
+			children = (
+				BFA1C322246A2F28009A28C7 /* VietMapsGL.h */,
+				BFA1C323246A2F28009A28C7 /* Info.plist */,
+			);
+			path = VietMapsGL;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BFA1C31B246A2F28009A28C7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFA1C324246A2F28009A28C7 /* VietMapsGL.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		BF87F703246A11B800D29757 /* VietMapsGLCarthage */ = {
@@ -86,15 +146,35 @@
 				BF87F700246A11B800D29757 /* Sources */,
 				BF87F701246A11B800D29757 /* Frameworks */,
 				BF87F702246A11B800D29757 /* Resources */,
+				BFA1C329246A2F28009A28C7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BFA1C326246A2F28009A28C7 /* PBXTargetDependency */,
 			);
 			name = VietMapsGLCarthage;
 			productName = VietMapsGLCarthage;
 			productReference = BF87F704246A11B800D29757 /* VietMapsGLCarthage.app */;
 			productType = "com.apple.product-type.application";
+		};
+		BFA1C31F246A2F28009A28C7 /* VietMapsGL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFA1C32C246A2F28009A28C7 /* Build configuration list for PBXNativeTarget "VietMapsGL" */;
+			buildPhases = (
+				BFA1C31B246A2F28009A28C7 /* Headers */,
+				BFA1C31C246A2F28009A28C7 /* Sources */,
+				BFA1C31D246A2F28009A28C7 /* Frameworks */,
+				BFA1C31E246A2F28009A28C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VietMapsGL;
+			productName = VietMapsGL;
+			productReference = BFA1C320246A2F28009A28C7 /* VietMapsGL.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -106,6 +186,9 @@
 				ORGANIZATIONNAME = VietMaps;
 				TargetAttributes = {
 					BF87F703246A11B800D29757 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					BFA1C31F246A2F28009A28C7 = {
 						CreatedOnToolsVersion = 11.4;
 					};
 				};
@@ -124,6 +207,7 @@
 			projectRoot = "";
 			targets = (
 				BF87F703246A11B800D29757 /* VietMapsGLCarthage */,
+				BFA1C31F246A2F28009A28C7 /* VietMapsGL */,
 			);
 		};
 /* End PBXProject section */
@@ -136,6 +220,13 @@
 				BF87F717246A11BA00D29757 /* LaunchScreen.storyboard in Resources */,
 				BF87F714246A11BA00D29757 /* Assets.xcassets in Resources */,
 				BF87F712246A11B800D29757 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFA1C31E246A2F28009A28C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,7 +244,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BFA1C31C246A2F28009A28C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFA1C326246A2F28009A28C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFA1C31F246A2F28009A28C7 /* VietMapsGL */;
+			targetProxy = BFA1C325246A2F28009A28C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BF87F710246A11B800D29757 /* Main.storyboard */ = {
@@ -321,6 +427,60 @@
 			};
 			name = Release;
 		};
+		BFA1C32A246A2F28009A28C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8F38276T53;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = VietMapsGL/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.vietmaps.VietMapsGL;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BFA1C32B246A2F28009A28C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8F38276T53;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = VietMapsGL/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.vietmaps.VietMapsGL;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -338,6 +498,15 @@
 			buildConfigurations = (
 				BF87F71E246A11BA00D29757 /* Debug */,
 				BF87F71F246A11BA00D29757 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFA1C32C246A2F28009A28C7 /* Build configuration list for PBXNativeTarget "VietMapsGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFA1C32A246A2F28009A28C7 /* Debug */,
+				BFA1C32B246A2F28009A28C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
